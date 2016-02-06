@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(cvbridgetest)
+project(bouyfinder)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -12,6 +12,6 @@ catkin_package()
 
 include_directories(include ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
 add_executable(image_converter src/image_converter.cpp)
-add_executable(color_filtered_circles src/color_filtered_circles.cpp)
+add_executable(bouyfinder src/bouyfinder.cpp)
 target_link_libraries(image_converter ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-target_link_libraries(color_filtered_circles ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+target_link_libraries(bouyfinder ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
